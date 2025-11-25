@@ -123,7 +123,7 @@ export default function Footer() {
             viewport={{ once: true }}
             className="flex flex-wrap gap-2"
           >
-            {navLinks.map((link, index) => {
+            {navLinks.map((link) => {
               const isActive = activeSection === link.href.substring(1);
               return (
                 <motion.button
