@@ -6,6 +6,8 @@ import aeroguardImg from "../assets/AeroGuard.png";
 import beatboxImg from "../assets/BeatBox.png";
 import fuelstationImg from "../assets/FuelStation.png";
 import carRentalImg from "../assets/CarRental.png";
+import financeTrackerImg from "../assets/FinanceTracker.png";
+import myPortfolioImg from "../assets/MyPortfolio.png";
 
 interface Project {
   id: number;
@@ -20,6 +22,22 @@ export default function Projects() {
   const projects: Project[] = [
     {
       id: 1,
+      title: "Finance Tracker",
+      description: "A full-stack finance management application that helps users track income, expenses, saving goals, and monthly financial performance. Includes real-time charts, category-based analytics, and a secure backend API.",
+      tags: ["React", "Node.js", "Express", "MongoDB"],
+      image: financeTrackerImg,
+      githubUrl: "https://github.com/Sithmisasanka/Finance-Tracker"
+    },
+    {
+      id: 2,
+      title: "My Portfolio",
+      description: "A modern personal portfolio showcasing academic background, skills, certifications, and projects. Designed with a clean UI/UX, responsive layout, and optimized for performance and mobile viewing.",
+      tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+      image: myPortfolioImg,
+      githubUrl: "https://github.com/Sithmisasanka/My-Portfolio"
+    },
+    {
+      id: 3,
       title: "Smart Healthcare System",
       description: "A full-stack hospital management system designed to digitalize patient–doctor interactions. Includes secure multi-role access, appointment scheduling, medical record handling, and QR-based patient identification for faster processing.",
       tags: ["Next.js", "MongoDB", "Tailwind CSS", "QR Code"],
@@ -27,7 +45,7 @@ export default function Projects() {
       githubUrl: "https://github.com/Sithmisasanka/Smart-Healthcare-System"
     },
     {
-      id: 2,
+      id: 4,
       title: "AeroGuard – Air Quality Monitoring App",
       description: "A mobile air-quality monitoring app that provides real-time pollution readings, exposure tracking, and health recommendations based on environmental data. Built with a focus on user clarity and mobile responsiveness.",
       tags: ["React Native", "Firebase", "Arduino", "IoT Sensors"],
@@ -35,7 +53,7 @@ export default function Projects() {
       githubUrl: "https://github.com/Sithmisasanka/Aero-Guard-Mobile-App"
     },
     {
-      id: 3,
+      id: 5,
       title: "BeatBox – Music Player App",
       description: "An Android music player with playlist management, smooth navigation, and a modern UI. Designed to deliver an immersive audio experience with fast performance on mobile devices.",
       tags: ["Kotlin", "Android Studio", "Firebase", "UI/UX"],
@@ -43,7 +61,7 @@ export default function Projects() {
       githubUrl: "https://github.com/Sithmisasanka/Beat-Box-Music-Store"
     },
     {
-      id: 4,
+      id: 6,
       title: "Fuel Station Management System",
       description: "A comprehensive management platform for fuel stations covering inventory tracking, sales monitoring, employee management, and reporting dashboards for efficient daily operations.",
       tags: ["React", "Node.js", "Express", "MongoDB"],
@@ -51,7 +69,7 @@ export default function Projects() {
       githubUrl: "https://github.com/Sithmisasanka/Fuel-Station-Management-System"
     },
     {
-      id: 5,
+      id: 7,
       title: "Car Rental System",
       description: "The Car Rental System streamlines the entire vehicle rental process. Users can explore available vehicles, check availability, and place bookings, while administrators can manage the fleet, update vehicle information, track customer data, and oversee rental operations. The system is designed for efficiency, clarity, and smooth interaction between customers and staff.",
       tags: ["React", "Node.js", "MongoDB", "REST API"],
@@ -84,8 +102,8 @@ export default function Projects() {
           <div className="w-32 h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-pink-600 mx-auto rounded-full"></div>
         </motion.div>
 
-        {/* Projects List */}
-        <div className="space-y-12">
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -99,42 +117,44 @@ export default function Projects() {
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl opacity-0 group-hover:opacity-75 blur-lg transition duration-300"></div>
 
               {/* Project Card */}
-              <div className={`relative bg-gray-800/50 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-700/50 hover:border-purple-500/30 transition-all duration-300 flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                }`}>
+              <div className="relative bg-gray-800/50 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-700/50 hover:border-purple-500/30 transition-all duration-300 flex flex-col h-full group-hover:scale-105">
                 {/* Image Section */}
-                <div className="lg:w-1/2 relative overflow-hidden">
-                  <div className="relative h-64 lg:h-full min-h-[300px]">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-                  </div>
+                <div className="relative overflow-hidden aspect-video">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
                 </div>
 
                 {/* Content Section */}
-                <div className="lg:w-1/2 p-8 lg:p-10 flex flex-col justify-center">
+                <div className="p-6 flex flex-col flex-grow">
                   {/* Title */}
-                  <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 transition-all duration-300">
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 transition-all duration-300">
                     {project.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-300 text-base leading-relaxed mb-6">
+                  <p className="text-gray-300 text-sm leading-relaxed mb-4 flex-grow line-clamp-3">
                     {project.description}
                   </p>
 
                   {/* Tags */}
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.tags.map((tag, tagIndex) => (
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.slice(0, 3).map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
-                        className="px-4 py-2 text-sm font-medium bg-purple-500/10 text-purple-300 rounded-full border border-purple-500/20 hover:bg-purple-500/20 transition-colors"
+                        className="px-3 py-1 text-xs font-medium bg-purple-500/10 text-purple-300 rounded-full border border-purple-500/20"
                       >
                         {tag}
                       </span>
                     ))}
+                    {project.tags.length > 3 && (
+                      <span className="px-3 py-1 text-xs font-medium bg-purple-500/10 text-purple-300 rounded-full border border-purple-500/20">
+                        +{project.tags.length - 3}
+                      </span>
+                    )}
                   </div>
 
                   {/* GitHub Button */}
@@ -143,9 +163,9 @@ export default function Projects() {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-medium hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-medium text-sm hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300"
                     >
-                      <FiGithub className="text-lg" />
+                      <FiGithub className="text-base" />
                       View on GitHub
                     </a>
                   </div>
