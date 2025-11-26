@@ -168,7 +168,7 @@ Follow the prompts to complete deployment.
 The `package.json` already includes the homepage configuration:
 
 ```json
-"homepage": "https://kavindi03.github.io/SithmiSasankaPortfolio/"
+"homepage": "https://SithmiSasanka.github.io/SithmiSasankaPortfolio/"
 ```
 
 Make sure this matches your GitHub username and repository name.
