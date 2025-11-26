@@ -214,7 +214,7 @@ This will:
 <<<<<<< HEAD
 Your site will be live at: `https://YOUR_GITHUB_USERNAME.github.io/SithmiSasankaPortfolio/`
 =======
-Your site will be live at: `https://kavindi03.github.io/My-Portfolio/`
+Your site will be live at: `https://SithmiSasanka.github.io/My-Portfolio/`
 >>>>>>> 3e4ce858ddd5d87677cbc512bc9b333f23454d4a
 
 ---
