@@ -2,55 +2,51 @@
 
 A modern, responsive portfolio website built with React, TypeScript, and Vite. Features stunning animations, particle effects, and a beautiful dark mode design.
 
-![Portfolio Preview](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+**Live Demo:** https://sithmi-sasanka.vercel.app/#
+
+![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-5.0.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ## ✨ Features
 
-- 🎨 **Modern UI/UX** - Clean, professional design with smooth animations
-- 🌙 **Dark Mode** - Beautiful dark theme optimized for readability
-- 📱 **Fully Responsive** - Looks great on all devices (mobile, tablet, desktop)
-- ⚡ **Fast Performance** - Built with Vite for lightning-fast load times
-- 🎭 **Particle Effects** - Interactive particle background using tsParticles
-- 🎬 **Framer Motion** - Smooth, professional animations throughout
-- 🎯 **3D Graphics** - Three.js integration for stunning visual effects
-- 📧 **Contact Form** - Functional contact form with validation
-- 🚀 **Optimized Build** - Production-ready with code splitting and optimization
+- 🎨 **Modern UI/UX** with smooth animations  
+- 🌙 **Dark mode** optimized for readability  
+- 📱 **Fully responsive** across all devices  
+- ⚡ **Vite-powered performance**  
+- 🎭 **tsParticles** for dynamic particle effects  
+- 🎬 **Framer Motion** animations  
+- 🎯 **Three.js** 3D effects  
+- 📧 **Contact form** with validation  
+- 🚀 **Optimized production build**  
 
 ## 🛠️ Technology Stack
 
 ### Core
+- **React 18.3.1**
+- **TypeScript 5.9.3**
+- **Vite 5.0.0**
 
-- **React 18.3.1** - UI library
-- **TypeScript 5.9.3** - Type-safe JavaScript
-- **Vite 5.0.0** - Next-generation build tool
+### UI & Styling
+- **Tailwind CSS 3.4.0**
+- **Framer Motion 12.23.24**
+- **React Icons 5.5.0**
 
-### Styling & UI
+### Graphics & Effects
+- **Three.js 0.181.2**
+- **tsParticles 3.9.1**
+- **@tsparticles/react 3.0.0**
 
-- **Tailwind CSS 3.4.0** - Utility-first CSS framework
-- **Framer Motion 12.23.24** - Animation library
-- **React Icons 5.5.0** - Icon library
-
-### Effects & Graphics
-
-- **Three.js 0.181.2** - 3D graphics library
-- **tsParticles 3.9.1** - Particle effects
-- **@tsparticles/react 3.0.0** - React wrapper for tsParticles
-
-### Other Libraries
-
-- **Axios 1.13.2** - HTTP client for API requests
+### Utilities
+- **Axios 1.13.2**
 
 ## 📋 Prerequisites
 
-Before you begin, ensure you have the following installed:
+- **Node.js 16+**
+- **npm** or **yarn**
 
-- **Node.js** (version 16.x or higher) - [Download here](https://nodejs.org/)
-- **npm** (comes with Node.js) or **yarn**
-
-To check if you have Node.js and npm installed, run:
+Check your versions:
 
 ```bash
 node --version
@@ -59,209 +55,81 @@ npm --version
 
 ## 🚀 Installation
 
-Follow these steps to set up the project locally:
-
 ### 1. Clone the Repository
-
 ```bash
 git clone <your-repository-url>
 cd "Portfolio - Sithmi"
 ```
 
 ### 2. Install Dependencies
-
 ```bash
 npm install
 ```
 
-This will install all required packages listed in `package.json`.
-
 ## 💻 Local Development
 
-### Start Development Server
+Start development server:
 
 ```bash
 npm run dev
 ```
 
-This will start the Vite development server. The application will open automatically in your default browser at:
+Access locally:
 
 ```
 http://localhost:3000
 ```
 
-The development server includes:
+Useful scripts:
 
-- ⚡ Hot Module Replacement (HMR) - Changes reflect instantly
-- 🔍 Source maps - Easy debugging
-- 🎯 Fast refresh - Preserves component state
-
-### Available Scripts
-
-- **`npm run dev`** - Start development server on port 3000
-- **`npm run build`** - Create production build in `dist/` folder
-- **`npm run preview`** - Preview production build locally
-- **`npm start`** - Alias for `npm run dev`
+- `npm run dev` — Start development  
+- `npm run build` — Build for production  
+- `npm run preview` — Preview production build  
 
 ## 🏗️ Building for Production
 
-To create an optimized production build:
-
 ```bash
 npm run build
 ```
 
 This will:
-
-1. Run TypeScript compiler to check for type errors
-2. Bundle and minify all assets
-3. Generate optimized output in the `dist/` folder
-4. Create source maps for debugging
-
-The build output will be in the `dist/` directory, ready for deployment.
+- Compile TypeScript  
+- Bundle + minify assets  
+- Output to `dist/`  
+- Generate source maps  
 
 ## 🌐 Deployment
 
-### Deploy to Vercel (Recommended)
+### ▶ Deploy on Vercel (Recommended)
 
-Vercel is the easiest way to deploy your portfolio with zero configuration.
+1. Go to **https://vercel.com**
+2. Click **Add New Project**
+3. Import your GitHub repo
+4. Vercel auto-detects Vite settings
+5. Click **Deploy**
 
-#### Method 1: Deploy via Vercel Dashboard
-
-1. **Sign up/Login** to [Vercel](https://vercel.com)
-2. Click **"Add New Project"**
-3. **Import** your Git repository (GitHub, GitLab, or Bitbucket)
-4. Vercel will auto-detect Vite configuration
-5. Click **"Deploy"**
-
-That's it! Vercel will automatically:
-
-- Build your project
-- Deploy to a production URL
-- Set up automatic deployments for every push to your main branch
-
-#### Method 2: Deploy via Vercel CLI
+### ▶ Deploy via Vercel CLI
 
 ```bash
-# Install Vercel CLI globally
 npm install -g vercel
-
-# Deploy
 vercel
 ```
 
-Follow the prompts to complete deployment.
-
-#### Custom Domain on Vercel
-
-1. Go to your project settings on Vercel
-2. Navigate to **"Domains"**
-3. Add your custom domain
-4. Update your domain's DNS settings as instructed
-
----
-
-### Deploy to GitHub Pages
-
-#### 1. Update Configuration
-
-The `package.json` already includes the homepage configuration:
-
-```json
-<<<<<<< HEAD
-"homepage": "https://YOUR_GITHUB_USERNAME.github.io/My-Portfolio/"
-=======
-"homepage": "https://SithmiSasanka.github.io/My-Portfolio/"
->>>>>>> 3e4ce858ddd5d87677cbc512bc9b333f23454d4a
-```
-
-Make sure this matches your GitHub username and repository name.
-
-#### 2. Install gh-pages (Already included)
-
-The `gh-pages` package is already in dependencies.
-
-#### 3. Add Deployment Scripts
-
-Add these scripts to your `package.json`:
-
-```json
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-}
-```
-
-#### 4. Deploy
-
-```bash
-npm run deploy
-```
-
-This will:
-
-1. Build your project
-2. Push the `dist/` folder to the `gh-pages` branch
-3. Make it available at your GitHub Pages URL
-
-#### 5. Enable GitHub Pages
-
-1. Go to your repository on GitHub
-2. Navigate to **Settings** → **Pages**
-3. Under **Source**, select the `gh-pages` branch
-4. Click **Save**
-
-<<<<<<< HEAD
-Your site will be live at: `https://YOUR_GITHUB_USERNAME.github.io/My-Portfolio/`
-=======
-Your site will be live at: `https://SithmiSasanka.github.io/My-Portfolio/`
->>>>>>> 3e4ce858ddd5d87677cbc512bc9b333f23454d4a
-
----
-
-### Deploy to Netlify
-
-#### Via Netlify Dashboard
-
-1. **Sign up/Login** to [Netlify](https://www.netlify.com)
-2. Click **"Add new site"** → **"Import an existing project"**
-3. Connect your Git repository
-4. Configure build settings:
-   - **Build command:** `npm run build`
-   - **Publish directory:** `dist`
-5. Click **"Deploy site"**
-
-#### Via Netlify CLI
-
-```bash
-# Install Netlify CLI
-npm install -g netlify-cli
-
-# Build the project
-npm run build
-
-# Deploy
-netlify deploy --prod --dir=dist
-```
-
----
-
-### Other Deployment Options
-
-- **AWS Amplify** - [Guide](https://docs.aws.amazon.com/amplify/latest/userguide/getting-started.html)
-- **Firebase Hosting** - [Guide](https://firebase.google.com/docs/hosting)
-- **Cloudflare Pages** - [Guide](https://developers.cloudflare.com/pages/)
+### Custom Domain
+- Go to **Vercel → Project Settings → Domains**
+- Add your domain  
+- Update DNS  
 
 ## 📁 Project Structure
 
 ```
 Portfolio - Sithmi/
-├── public/                 # Static assets
+├── public/
 │   ├── Sithmi-Sasanka-CV.pdf
 │   └── vite.svg
 ├── src/
-│   ├── assets/            # Images, fonts, etc.
-│   ├── components/        # React components
+│   ├── assets/
+│   ├── components/
 │   │   ├── Navbar.tsx
 │   │   ├── Hero.tsx
 │   │   ├── About.tsx
@@ -269,119 +137,76 @@ Portfolio - Sithmi/
 │   │   ├── Projects.tsx
 │   │   ├── Contact.tsx
 │   │   └── Footer.tsx
-│   ├── scripts/           # Utility scripts
-│   ├── App.tsx            # Main App component
-│   ├── main.tsx           # Entry point
-│   └── index.css          # Global styles
-├── index.html             # HTML template
-├── package.json           # Dependencies and scripts
-├── tsconfig.json          # TypeScript configuration
-├── tailwind.config.js     # Tailwind CSS configuration
-├── vite.config.js         # Vite configuration
-└── README.md              # This file
+│   ├── scripts/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── index.html
+├── package.json
+├── tsconfig.json
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
 ```
 
 ## 🎨 Customization Guide
 
-### Update Personal Information
+### Hero Section
+Modify in `Hero.tsx`:
+- Name  
+- Title  
+- Description  
+- CV link  
 
-1. **Hero Section** - Edit `src/components/Hero.tsx`
-   - Update name, title, description
-   - Change CV download link
+### About Section
+Modify in `About.tsx`  
+- Personal bio  
+- Skills summary  
 
-2. **About Section** - Edit `src/components/About.tsx`
-   - Update bio and personal information
+### Skills
+Edit `Skills.tsx`  
+- Add or remove skills  
 
-3. **Skills Section** - Edit `src/components/Skills.tsx`
-   - Add/remove skills
-   - Update skill categories
+### Projects
+Edit `Projects.tsx`  
+- Project images  
+- Live links  
+- GitHub links  
 
-4. **Projects Section** - Edit `src/components/Projects.tsx`
-   - Add your projects
-   - Update project links and descriptions
-
-5. **Contact Information** - Edit `src/components/Contact.tsx`
-   - Update email, phone, social links
-
-### Change Colors
-
-Edit `tailwind.config.js` to customize the color scheme:
-
-```javascript
-theme: {
-  extend: {
-    colors: {
-      primary: '#your-color',
-      // Add more custom colors
-    }
-  }
-}
-```
-
-### Update Fonts
-
-Fonts are loaded from Google Fonts in `index.html`. To change fonts:
-
-1. Update the Google Fonts link in `index.html`
-2. Update font families in `tailwind.config.js`
-
-### Modify Particle Effects
-
-Edit particle configuration in the component using tsParticles (usually in `Hero.tsx` or `App.tsx`).
+### Contact
+Edit `Contact.tsx`  
+- Email  
+- Social links  
 
 ## 🐛 Troubleshooting
 
-### Build Errors
-
-**Issue:** TypeScript errors during build
-
+### TypeScript Build Errors
 ```bash
-# Check for type errors
 npm run build
 ```
 
-**Solution:** Fix any TypeScript errors shown in the console
-
-**Issue:** Module not found errors
-
+### Module Not Found
 ```bash
-# Clear node_modules and reinstall
 rm -rf node_modules package-lock.json
 npm install
 ```
 
-### Development Server Issues
-
-**Issue:** Port 3000 already in use
-
+### Port Already in Use
 ```bash
-# Kill the process using port 3000 (macOS/Linux)
 lsof -ti:3000 | xargs kill -9
 ```
 
-**Issue:** Changes not reflecting
-
-- Clear browser cache (Cmd+Shift+R on Mac, Ctrl+Shift+R on Windows)
-- Restart the development server
-
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source under the **MIT License**.
 
 ## 👤 Author
 
 **Sithmi Sasanka**
 
-- Portfolio: [Your Portfolio URL]
-- GitHub: [@your-github-username](https://github.com/your-github-username)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
-
-## 🙏 Acknowledgments
-
-- React team for the amazing library
-- Vite team for the blazing-fast build tool
-- Tailwind CSS for the utility-first CSS framework
-- All open-source contributors
+- Portfolio: https://sithmi-sasanka.vercel.app/#  
+- GitHub: https://github.com/Sithmisasanka  
+- LinkedIn: https://www.linkedin.com/in/sithmi-sasanka-964751256
 
 ---
 
