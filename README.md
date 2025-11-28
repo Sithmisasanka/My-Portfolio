@@ -3,6 +3,8 @@
 A modern, responsive portfolio website built with React, TypeScript, and Vite. Features stunning animations, particle effects, and a beautiful dark mode design.
 
 **Live Demo:** https://sithmi-sasanka.vercel.app/#
+![Portfolio Preview](https://github.com/Sithmisasanka/My-Portfolio/blob/master/src/assets/MyPortfolio.png?raw=1)
+
 
 ![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
